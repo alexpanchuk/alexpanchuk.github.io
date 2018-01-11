@@ -1,0 +1,74 @@
+/* PREVIEW ==================================== */
+	.preview {
+		width: auto;
+		max-width: 690px;
+		padding: 20px;
+		.clearfix();
+		border-radius: 4px;
+		background-color: #fff;
+		color: @text-grey;
+		.open-reg();
+	}
+	.preview__img {
+		float: left;
+		max-width: 270px;
+		@media screen and (min-width: 0px) and (max-width: 880px) { max-width: 230px; }
+		@media screen and (min-width: 0px) and (max-width: 600px) { float: none;; }
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+	.preview__caption {
+		font-size: 30px;
+		margin-top: 15px;
+		margin-bottom: 30px;
+		@media screen and (min-width: 0px) and (max-width: 600px) { font-size: 24px; }
+	}
+	.preview__price {
+		.recom-desc__price();
+	}
+	.preview__discount {
+		.recom-desc__discount();
+		margin-bottom: 30px;
+		display: inline-block;
+	}
+	.preview__duration {
+		display: block;
+		margin-bottom: 30px;
+	}
+	.preview__button-buy {
+		font-size: 12px;
+		text-transform: uppercase;
+		.open-bold();
+		position: relative;
+		display: inline-block;
+		width: 115px;
+		height: 36px;
+		margin-bottom: 30px;
+		padding-left: 10px;
+		line-height: 36px;
+		color: #fff;
+		background-color: @blue;
+		transition: all 0.2s;
+		&:hover {
+			background-color: @orange;
+		}
+		&:after {
+			font-family: 'FontAwesome';
+			content: "\f07a";
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			display: block;
+			width: 36px;
+			height: 36px;
+			line-height: 36px;
+			font-size: 19px;
+			text-align: center;
+			background-color: @orange;
+		}
+	}
+	.preview__desc {
+		font-size: 14px;
+		line-height: 1.7;
+	}
+/* END PREVIEW ================================ */

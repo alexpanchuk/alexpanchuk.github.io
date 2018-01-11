@@ -1,0 +1,25 @@
+/* SEARCH ===================================== */
+.page__caption--search {
+  text-align: center;
+}
+.page__caption--search:after {
+  content: "";
+  height: 1px;
+  display: block;
+  background: #dfdfdf;
+  margin-top: 0.625em;
+  margin-bottom: 1.25em;
+}
+.page__caption--search span {
+  text-transform: uppercase;
+}
+.search__result-caption {
+  font-size: 2em;
+  margin-bottom: 1.25em;
+}
+.serach__no-result {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 2.85714286em;
+}
+/* END SEARCH ================================= */
