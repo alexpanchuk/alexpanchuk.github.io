@@ -1,0 +1,22 @@
+=== 1. 
+.key data-key = audio data-key = keycode of pressed button.
+=== 2. 
+обработать нажатую кнопку (получить e.keyCode)
+check the event
+=== 3. 
+выбрать audio соответствующее
+если нету return
+=== 4. 
+audio.play(), 
+audio.currentTime = 0 (before play() to let audio repeat)
+=== 5. 
+выбрать .key соотвествующий нажатой кнопке
+.classList.add('playing')
+=== 6. 
+listen all .key to 'transitionend' and call a function (use keys.foreach(key => func)).
+Check function event
+Check function 'this'
+Return если e.propertyName !== transform
+Remove class .playing
+=== 7. 
+Realize, using function

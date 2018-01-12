@@ -1,0 +1,11 @@
+1.
+diplay: flex
+flex: 1
+flex-direction: column
+center
+first & last <p> translateY +100% and -100%
+  &.active remove translate
+2.
+select panels
+for each ae click make opened
+for each ae transitionend make first & last <p> active
