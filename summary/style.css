@@ -1,20 +1,215 @@
-ul {
+/*
+* COMMON
+*/
+
+body {
+  font-family: "PT Sans", sans-serif;
+  line-height: 1.4;
+  padding-top: 2em;
+  padding-bottom: 5em;
+  font-size: 18px;
+}
+
+ul,
+li {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+a {
+  color: #005ea5;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #fff;
+  background-color: #57a2db;
+  outline: 2px solid #57a2db;
+}
+
+p {
+  margin: 0;
+}
+
+h2 {
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
 .page-container {
-  display: flex;
-  width: 900px;
+  display: block;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.page-aside {
-  width: 300px;
+.visually-hidden {
+  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
 }
 
+/*
+* ASIDE
+*/
+
+.page-aside {
+  width: 100%;
+  text-align: center;
+}
+
+.page-aside__photo {
+  width: 200px;
+}
+
+.page-aside__info-list {
+  margin-top: 1em;
+}
+
+.page-aside__name {
+  margin-bottom: 0;
+}
+
+.page-aside__position {
+  margin-top: 0;
+  font-weight: bold;
+  color: #777;
+}
+
+/*
+* MAIN
+*/
+
 .page-main {
-  width: 600px;
+  width: 100%;
+}
+
+/*
+* ABOUT
+*/
+
+.about > p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/*
+* CAREER
+*/
+
+.career__job:not(:first-of-type) {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.job__title {
+  margin: 0;
+}
+
+.job__period {
+  color: #777;
+  font-style: italic;
+}
+
+.job__position {
+  margin-top: 0.3em;
+  font-weight: bold;
+}
+
+/*
+* EDUCATON
+*/
+
+.educ__institution {
+  margin: 0;
+}
+
+/*
+* TECH
+*/
+
+.tech__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tech__item {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 1px solid #497fa7;
+  color: #fff;
+  background-color: #497fa7;
+}
+
+/*
+* MEDIA
+*/
+
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+  .page-container {
+    max-width: 650px;
+  }
+
+  .page-aside {
+    text-align: left;
+  }
+
+  .page-aside__desc {
+    padding-left: 220px;
+  }
+
+  .page-aside__photo {
+    float: left;
+  }
+
+  .page-aside__name {
+    margin-top: 0;
+  }
+}
+
+@media print, screen and (min-width: 1101px) {
+  .page-container {
+    display: flex;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page-aside {
+    width: 250px;
+    padding-top: 1.5em;
+    text-align: left;
+  }
+
+  .page-main {
+    width: 650px;
+  }
+}
+
+@media print {
+  section {
+    page-break-inside: avoid;
+  }
+
+  .tech__item {
+    color: #000;
+  }
+
+  .recom__item:after {
+    content: "(paqmind.com/team/ivan-kleshnin/)";
+    display: block;
+  }
 }
