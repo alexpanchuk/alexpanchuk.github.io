@@ -500,7 +500,7 @@ h3 {
   margin-right: 5px;
   margin-bottom: 5px;
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 3px 6px;
   border: 1px solid #497fa7;
   color: #fff;
   background-color: #497fa7;
@@ -511,11 +511,9 @@ h3 {
 * MEDIA
 */
 @media screen and (min-width: 550px) and (max-width: 1100px) {
-  .page-aside__desc {
-    padding-left: 250px;
-  }
   .page-aside__photo {
     float: left;
+    margin-right: 20px;
   }
   .page-aside__name {
     margin-top: 0;
